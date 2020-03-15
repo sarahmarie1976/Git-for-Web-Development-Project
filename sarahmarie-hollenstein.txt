@@ -1,0 +1,207 @@
+1. What is Semantic HTML? 
+	Semantic HTML or semantic markup is HTML that introduces meaning to the web page rather than just presentation. A <p> tag indicates that the enclosed text is a paragraph. This is both semantic and presentational because people know what paragraphs are, and browsers know how to display them.
+
+    2. What is HTML used for? 
+	HTML is used to create electronic documents (called pages) that are displayed on the World Wide Web. 
+
+    3. What is an attribute and where do we put it?
+	Tag Attributes are modifiers for the HTML tags and they provide additional information. In most cases they are defined in name="value" pairs and they are always declared in the opening tag.
+ 
+    4. What is the h1 tag used for? How many times should I use it on a page?
+	You want to use <h1> tag per page. The <H1> HTML tag is usually used for the title of a page or post and it is the first header visible on a page. The formatting of an h1 usually differs from the rest of the header tags found on a page (h2, h3, h4). 
+	
+    5. Name two tags that have required attributes
+		1- id 
+		2- style
+
+    6. What do we put in the head of our HTML document? 
+	The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag. 
+
+    7. What is an id? 
+	The id attribute specifies a unique id for an HTML element (the value must be unique within the HTML document). 
+
+    8. What elements can I add an id to? 
+	The id attribute is most used to point to a style in a style sheet, and by JavaScript (via the HTML DOM) to manipulate the element with the specific id.
+	
+    9. How many times can I use the same id on a page? 
+	ID's are meant to use for identifying elements uniquely, they will work as far as CSS goes. This is because an id value can be given to only one HTML element, in other words, multiple elements cannot have the same id value on the same page.
+
+    10. What is a class? 
+	The class name can be used by CSS and JavaScript to perform certain tasks for elements with the specified class name.
+
+    11. What elements can I add a class to? 
+	In HTML5, the class attribute can be used on any HTML element (it will validate on any HTML element. However, it is not necessarily useful). In HTML 4.01, the class attribute cannot be used with: <base>, <head>, <html>, <meta>, <param>, <script>, <style>, and <title>.
+
+
+    12. How many times can I use the same class on a page? 
+	There is no technical limit, but one should heavily consider having loads of classes on any elementas the browswer will have to parse all the classes, apply those styles and render the page. 
+
+    13. How do I get my link to open in a new tab?
+	just add a target="_blank" attribute to your links (anchor tags). 
+
+    14. What is the alt attribute used for? 
+	The required alt attribute specifies an alternate text for an image, if the image cannot be displayed. The alt attribute provides alternative information for an image if a user for some reason cannot view it  
+
+    15. How do I reference an id?
+	The CSS id Selector
+The id selector uses the id attribute of an HTML element to select a specific element. The id of an element is unique within a page, so the id selector is used to select one unique element! To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+    16. What is the difference between a section and a div?
+	The section tag defines sections in a document like chapters, headers, footers whereas div tag defines a division in an HTML document. ... <section> gathers a specific and strong semantic purpose, where, div has only a generic, non-specific meaning and no semantic purpose.
+
+    17. What is CSS used for? 
+	CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.
+
+    18. How to we select an element? Example - every h2 on the page
+	The element selector selects HTML elements based on their tag names. 
+		h2 {
+
+		}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+	The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one. 
+	<div id="top></div>
+		#top {}
+			
+	<p class="intro"></p>
+		.intro {}
+	
+
+    20. How do we select classes in CSS?
+		HTML <p class="intro"></p>
+		CSS  .intro {}
+
+
+    21. How do we select a p element with a single class of “human””?
+		<p class="human"></p>
+			.human {}
+
+
+    22. What is a parent child selector? When would this be useful? 
+		The ("parent > child") selector selects all elements that are a direct child of the specified element. 
+		The Child Selector. In the second of five articles on the new selectors found in CSS2, we turn to the child selector. This is used to match elements that are direct children of other elements, which is a little more precise than the traditional contextual selector.
+
+
+    23. How do you select all links within a div with the class of sidebar?
+	The link selector is used to select unvisited links. Note that the link selector doesn't style links you have already visited. 
+
+
+    24. What is a pseudo selector?
+		A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer
+
+
+    25. What do we use the change the spacing between lines?
+		line-height
+
+
+    26. What do we use to change the spacing between letters?
+		letter spacing
+
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+		text-transform
+
+
+    28. How do I add a 1px border around my div that is dotted and black?
+		border: 1px dotted black;
+
+
+    29. How do I select everything on the page? 
+		* {}
+
+
+    30. How do I write a comment in CSS?
+	/* comment here */
+
+
+    31. How do I find out what file I am in, when I am using the command line? 
+		ls
+
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+		git status
+
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+		git remove  - you want to make sure you truly want to remove the file because once it is removed in the command line there is no way to restore it. 
+
+
+    34. Why should I use version control? 
+	Version control helps teams solve these kinds of problems, tracking every individual change by each contributor and helping prevent concurrent work from conflicting. Changes made in one part of the software can be incompatible with those made by another developer working at the same time.
+
+
+    35. How often should I commit to github?
+	Depends on your source code system and what else you have in place. If you're using Git, then commit whenever you finish a step.
+
+
+    36. What is the command we would use to push our repo up to github? 
+	git push
+
+
+    37. Walk me through Lambda's git flow. 
+	step one: forking -make sure that your username is attached to the file to verify your forked your project properly
+	step two: add Collaborator - settings - manage access and add colaborator
+	step three: clone the repo - click green button that states clone or download and click the clipboard to copy link
+		go into git command line and type "git clone "file-link"
+	step four: Make branch - create your own branch 'firstName-lastName'
+		git command line - git checkout -b 'sarahmarie-hollenstein'
+				   git branch - make sure you created the branch correctly 
+				   git push push -u origin
+	step five: Submit PR Part A - use your fork as base-fork (compare across forks)
+				make sure to check your base fork - should be your username
+				you will be able to open the branch in the pull request
+				
+	step five: submit PR Part B - add your PM as a collaborator as a reviewer on project
+	step six: A PM will now accept the merge request after conducting a reviw of the code.
+				be sure to "accept the changes"
+				
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+	 Inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.
+
+	a block-level element is any element that starts a new line, like a paragraph, and uses the full width of the page or container. A block-level element can take up one line or multiple lines and has a line break before and after the element
+
+
+    2. What happens when an element is positioned absolutely? 
+	An absolutely positioned element is an element whose computed position value is absolute or fixed . The top , right , bottom , and left properties specify offsets from the edges of the element's containing block.
+
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+	CSS box Model  - margin sets the outwards spacing and padding is inwards. You also have height, width and border. 
+
+ 
+    4A. Name 3 elements that are diplay block by default
+
+		1-<addres>
+		2-<nav>
+		3-<footer>
+
+    4B. Name 2 elements that are display inline by default 
+
+		1-<button>
+		2-<select>
+
+
+    4C. Name 1 element that is display inline-block by default
+
+		1-<div>
+
+
+    5. In your own words, explain the box model. What is the fix for the box model? 
+
+	The Box Model consist of three areas that surrond every block -level page element. 
+		1- padding - is the spacing inwards
+		2- margins - is the spaccing outwards
+		3- border - is a border that goes around the padding and content. Margin clears an area outside the border (which is transparent)
+
+ 	box-sizing: border-box 
+		The box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element, padding and border are included in the width and height: Both divs are the same size now!
+
+
+		
+
+
+
+   --> 
